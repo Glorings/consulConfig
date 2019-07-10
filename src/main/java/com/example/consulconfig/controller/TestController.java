@@ -14,10 +14,14 @@ public class TestController {
     @Value("${foo.bar.name}")
     private String name;
 
+    // 读取远程配置
+    @Value("${token}")
+    private String token;
+
     // 将配置展示在页面
     @GetMapping("/getName")
     public String getName(){
-        return name;
+        return name+token;
     }
 
 }

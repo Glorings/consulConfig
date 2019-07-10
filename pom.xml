@@ -32,10 +32,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
+       <!-- <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-consul-all</artifactId>
+        </dependency>-->
+        <!-- 因为只用到了Spring Cloud Consul 的配置功能-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-consul-config</artifactId>
         </dependency>
+        <!-- 因为只用到了Spring Cloud Consul 的配置功能-->
     </dependencies>
 
     <dependencyManagement>
